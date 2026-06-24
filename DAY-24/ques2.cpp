@@ -11,6 +11,11 @@ int main() {
     }
 
     for (char ch : str){
-        if (freq[ch] == 1){
-            cout << "First non-repeating character: " << ch << endl;
-            return 0;
+        if (freq[ch] >= 2){
+            cout << "First repeating character: " << ch << endl;
+            return 0 ;
+        }
+    }
+    cout << "No repeating character found." << endl;
+    return 0;
+}
